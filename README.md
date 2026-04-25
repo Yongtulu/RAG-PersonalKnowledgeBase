@@ -3,6 +3,16 @@
 A fully local RAG (Retrieval-Augmented Generation) system built with **LangChain + ChromaDB + Ollama**.  
 Chat with your own documents — course notes, PDFs, Markdown files — entirely offline.
 
+## Screenshot
+
+![Personal Knowledge Base Q&A](knowledgebase.png)
+
+The interface is split into two panels:
+- **Left — Document Management** — Add documents by directory path or drag-and-drop upload (PDF / Markdown / TXT). View all indexed files and remove them individually. Click **Build Index** to trigger incremental vectorization.
+- **Right — Knowledge Base Q&A** — Ask questions in natural language and receive answers with cited source passages. Conversation history is preserved across turns; click **Clear** to start a new session.
+
+---
+
 ## Features
 
 - **Incremental indexing** — MD5-based change detection; only new or modified files are re-processed
